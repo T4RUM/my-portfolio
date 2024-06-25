@@ -130,3 +130,22 @@ li:active {
   width: 15px;
 
 }
+/*Sessão de estilização dos icones do desktop*/
+#icons-desktop{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 90px;
+  padding: 10px;
+}
+#icons-desktop img{
+  width: 32px;
+}
+#icons-desktop, span{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  margin-bottom: 16px;
+}
