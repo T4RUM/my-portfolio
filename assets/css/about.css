@@ -7,6 +7,7 @@
 }
 
 main {
+  display: flex;
   width: 100%;
   height: 100vh;
   background-color: #00807f;
@@ -24,7 +25,6 @@ main {
   justify-content: space-between;
   position: fixed;
   bottom: 0;
-  
 }
 ul {
   display: flex;
@@ -32,6 +32,7 @@ ul {
   list-style: none;
   cursor: pointer;
 }
+
 .btn-inicio {
   margin-left: 2px;
   margin-bottom: 2px;
@@ -49,7 +50,7 @@ ul {
   font-size: 12px;
   transition: background-color 0.3s, transform 0.1s;
 }
-a{
+a {
   text-decoration: none;
   color: black;
 }
@@ -58,13 +59,13 @@ li:active {
   /*Efeito de click no botão*/
   background-color: darkgray;
   transform: scale(0.95);
- 
 }
 .btn-sobre {
+  height: 21px;
   margin-left: 2px;
   margin-bottom: 2px;
-  display: inline-block;
-  padding: 2px 6px 3px;
+  display: flex;
+  padding: 0 6px;
   background-color: silver;
   border-top: 1px solid #fff;
   border-left: 1px solid #fff;
@@ -74,8 +75,9 @@ li:active {
   min-width: 59px;
   margin-right: 6px;
   color: #000;
-  text-align: center;
+  gap: 8px;
   font-size: 12px;
+  place-items: center;
   transition: background-color 0.3s, transform 0.1s;
 }
 .btn-resumo {
@@ -127,26 +129,111 @@ li:active {
   gap: 4px;
 }
 
-#speaker,#pc-on{
+#speaker,
+#pc-on {
   width: 15px;
-
 }
 /*Sessão de estilização dos icones do desktop*/
-#icons-desktop{
+#icons-desktop {
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 90px;
   padding: 10px;
 }
-#icons-desktop img{
+#icons-desktop img {
   width: 32px;
 }
-#icons-desktop, span{
+#icons-desktop,
+span {
   color: #fff;
   display: flex;
   align-items: center;
   text-align: center;
   font-size: 10px;
   margin-bottom: 16px;
+}
+/*Criando caixa do notepad*/
+#notepad-about {
+  margin: auto;
+}
+
+.window {
+  min-width: 100%;
+  font-family: "Arial", sans-serif;
+  background: #c0c0c0;
+  border: 1px solid;
+  border-top-color: #dfdfdf;
+  border-left-color: #dfdfdf;
+  border-right-color: #000;
+  border-bottom-color: #000;
+}
+
+.window_inner {
+  height: 100%;
+  border: 1px solid;
+  border-top-color: #fff;
+  border-left-color: #fff;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+}
+
+.window_heading {
+  margin: 2px 2px 0;
+  padding: 1px 2px;
+  color: #fff;
+  background: linear-gradient(to right, #000080, #1084d0);
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.window_heading_icon {
+  background: url(../img/icon-box-notepad-16x16.png) no-repeat;
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin-right: 5px;
+}
+
+.window_actions {
+  margin: 5px 9px;
+  line-height: 1;
+  color: #000;
+  font-size: 11px;
+}
+
+.window_content {
+  height: 100%;
+  margin: 0 2px 2px 2px;
+  border: 1px solid;
+  border-top-color: #808080;
+  border-left-color: #808080;
+  border-bottom-color: #fff;
+  border-right-color: #fff;
+  font-size: 13px;
+  min-height: 100%;
+}
+
+.window_content_inner {
+  background: #fff;
+  border: 1px solid;
+  border-top-color: #000;
+  border-left-color: #000;
+  border-bottom-color: #dfdfdf;
+  border-right-color: #dfdfdf;
+  padding: 10px;
+  height: 100%;
+}
+
+textarea {
+  outline: none;
+  min-width: 800px;
+  min-height: 300px;
+  max-width: 90vw;
+  max-height: 80vh;
+}
+
+.btn-sobre img {
+  width: 12px;
 }
