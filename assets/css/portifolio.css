@@ -59,10 +59,11 @@ li:active {
   transform: scale(0.95);
 }
 .btn-sobre {
+  height: 21px;
   margin-left: 2px;
   margin-bottom: 2px;
-  display: inline-block;
-  padding: 2px 6px 3px;
+  display: flex;
+  padding: 0 6px;
   background-color: silver;
   border-top: 1px solid #fff;
   border-left: 1px solid #fff;
@@ -72,8 +73,9 @@ li:active {
   min-width: 59px;
   margin-right: 6px;
   color: #000;
-  text-align: center;
+  gap: 8px;
   font-size: 12px;
+  place-items: center;
   transition: background-color 0.3s, transform 0.1s;
 }
 .btn-resumo {
@@ -146,4 +148,7 @@ li:active {
   text-align: center;
   font-size: 10px;
   margin-bottom: 16px;
+}
+.btn-sobre img {
+  width: 12px;
 }
