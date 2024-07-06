@@ -14,3 +14,8 @@ O projeto utiliza HTML, CSS e JavaScript para criar uma experiência nostálgica
 - **Resume:** Página contendo meu currículo.
 - **Portfólio:** Seção destacando meus projetos e trabalhos.
 
+## Imagens
+<p float="left">
+  <img src="assets/img/Windows-home.png" width="500" />
+  <img src="assets/img/Windows-notepad.png" width="500" /> 
+</p>
